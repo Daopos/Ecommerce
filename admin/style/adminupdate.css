@@ -1,0 +1,92 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+}
+
+.shadow-box {
+  box-shadow: 0 0 10px;
+  margin: 20px 10px;
+  margin-bottom: 30px;
+  padding: 50px 15px;
+  border-radius: 10px;
+}
+
+.upload-container  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fix-file {
+  display: flex;
+  flex-direction: column;
+}
+
+.three-input, .two-input {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+
+.gender-input {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.inputs-s {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.upload-desc {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+  color: black;
+  font-size: large;
+}
+
+.color-input {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: transparent;
+}
+
+.two-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.fix-btn {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.fix-btns {
+  width: 100px;
+  height: 40px;
+  color: black;
+  background: none;
+  border: none;
+}

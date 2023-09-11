@@ -1,0 +1,99 @@
+<!-- <?php
+        require 'connect.php';
+
+
+        ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css?v=2">
+    <link rel="stylesheet" href="./style/mypurchase.css?v=2">
+    <script src="https://kit.fontawesome.com/3eb6e30751.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <?php include("navigation.php");
+
+    $id = isset($_SESSION["customer_id"]) ? $_SESSION["customer_id"] : null;
+    ?>
+
+    <div class="account-pur-container">
+        <h1 class="test">MyPurchase</h1>
+        <div class="purchase-container">
+            <div class="a-list">
+                <a href="preparing.php">Preparing</a>
+                <a href="shipped.php">Shipped</a>
+                <a href="allorder.php">All Order</a>
+            </div>
+            <div class="overflow-container">
+
+
+                <?php
+
+                $sql = "SELECT * FROM confirmation WHERE customer_id = $id";
+                $result = mysqli_query($connect, $sql);
+                while ($row = mysqli_fetch_array($result)) {
+                    $image = $row['image'];
+                    $total = $row['total_cost'];
+                    $name = $row['name'];
+                    $email = $row['email'];
+                    $method = $row['method'];
+                    $phone = $row['phone'];
+                    $shoename = $row['shoe_name'];
+                    $color = $row['shoe_color'];
+                    $size = $row['shoe_size'];
+
+                    echo '
+                    <div class="shoes-container">
+                    <div class="pic-container">
+                        <img src="Pics/Puma M.B.webp" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h3>' . $row['shoe_name'] . '</h3>
+                        <h5>' . $row['shoe_color'] . '</h5>
+                        <h5>Size: ' . $row['shoe_size'] . '</h5>
+                        <h4>₱' . $row['total_cost'] . '</h4>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <form action="">
+                        <input type="hidden" value="' . $row['id'] . '">
+                        <input class="inputs" type="submit" value="Cancel">
+                    </form>
+                </div>
+                    ';
+                }
+                ?>
+                <div class="shoes-container">
+                    <div class="pic-container">
+                        <img src="Pics/Puma M.B.webp" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h3>Air Jordan 2 Retro Low 'Melon Tint'</h3>
+                        <h5>SAIL/MELON TINT-LIGHT CURRY-COBBLESTONE</h5>
+                        <h5>Size: 9</h5>
+                        <h4>P8,996.00</h4>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <form action="">
+                        <input class="inputs" type="submit" value="Cancel">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html> -->

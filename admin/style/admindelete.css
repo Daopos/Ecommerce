@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.shoes-item {
+    width: 300px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shoes-item h2:nth-of-type(1) {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.shoes-item h2:not(h2:nth-of-type(1)) {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.shoes-item img {
+    height: 300px;
+    width: 300px;
+}
+
+.delete-container {
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    margin: auto;
+    box-shadow: 0 0 10px;
+    padding: 50px 15px;
+    width: 400px;
+}
+
+.two-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .two-btn input:last-child{
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+  }
+
+  .two-btn input{
+    background-color: #0275d8;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .up:hover , .ud:hover {
+    box-shadow: 0 0 31px rgba(33,33,33,.2); 
+   transform: scale(1.05);
+
+}
+
+h1 {
+    text-align: center;
+   padding: 100px 0 40px 0;
+
+}

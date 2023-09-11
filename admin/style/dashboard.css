@@ -1,0 +1,32 @@
+.dashboard-container {
+    display: flex;
+    padding: 50px 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-container a {
+    text-decoration: none;
+}
+
+.box-dash {
+    border-radius: 10px;
+    background-color: #AD8E70;
+    color: #F5F0BB;
+    width: auto;
+    height: 250px;
+    padding: 10px;
+    min-width: 300px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px;
+}
+
+.box-dash h1:last-of-type {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 70px;
+}
+
+.box-dash:hover {
+    box-shadow: 0 0 30px #888888;
+}

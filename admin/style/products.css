@@ -1,0 +1,219 @@
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: black;
+  }
+
+  .productsshoes {
+    padding: 5px;
+  }
+
+  .box {
+    /* margin-bottom: 30px; */
+    padding: 50px 15px;
+  margin: 20px 10px;
+  border-radius: 10px;
+
+  }
+  .basic-drop-shadow {
+    box-shadow: 0 0 10px;
+  }
+
+  .add-btn {
+    margin-bottom: 20px;
+  }
+
+  .add-btn input{
+  }
+  
+  a input[type=button] {
+    width: 80px;
+  }
+
+
+  .shoe-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.shoes-first-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    height: 50%;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.four-photos {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    order: 2;
+}
+
+.four-photos img {
+    height: 120px;
+    border: 1px solid #737373;
+    width: 90px;
+    border: 1px solid #737373;
+}
+
+
+.main-photo img {
+    border: 1px solid #737373;
+ 
+    height: 370px;
+    width: 330px;
+}
+
+.main-photo {
+  order: 1;
+
+}
+
+.shoes-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    order: 3;
+
+}
+
+.shoes-text h2:nth-of-type(1), .shoes-text h2:nth-of-type(3), .shoes-text h2:nth-of-type(4) {
+    font-size: 20px;
+    font-weight: 500;
+    color: #676767;
+}
+
+.shoes-text h2:not(h2:nth-of-type(1)) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.shoes-button {
+    margin-top: 20px;
+}
+
+.shoes-button button i {
+    margin-right: 10px;
+}
+
+.shoes-button button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.desc-container {
+    word-wrap: break-word;
+    width: 330px;
+    margin-top: 20px
+}
+
+.desc-container p {
+    font-size: smaller;
+    color: black;
+    font-weight: 800;
+}
+
+.related {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.shoes-item:hover {
+    transform: scale(1.05);
+  }
+
+.shoes-item {
+    width: 280px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.shoes-item h2:nth-of-type(1) {
+    font-size: 15px;
+    font-weight: 400;
+    color: #676767;
+}
+
+.shoes-item h2:not(h2:nth-of-type(1)) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.shoes-item img {
+    height: 280px;
+    width: 280px;
+}
+
+.btn-cancel {
+    text-align: center;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.btn-cancel a {
+    width: 200px;
+}
+
+@media only screen and (min-width: 1040px) {
+    
+    .four-photos {
+       
+    }
+
+    .shoes-first-container  {
+       
+    }
+
+   
+ 
+
+    .main-photo {
+    }
+
+    .shoes-text {
+    }
+
+
+    .four-photos img {
+        height: 120px;
+        width: 120px;
+      
+    }
+    
+    
+    .main-photo img {
+        height: 350px;
+        width: 420px;
+    }
+
+ }

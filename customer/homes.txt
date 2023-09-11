@@ -1,0 +1,130 @@
+<?php
+require 'connect.php';
+?>
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./style/style.css?v=2">
+    <link rel="stylesheet" href="./style/home.css?v=2">
+    <script src="https://kit.fontawesome.com/3eb6e30751.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+</head>
+<html>
+
+<body>
+    <?php include("navigation.php"); ?>
+    <div class="home-container">
+        <img src="Pics/woman-legs-pink-pants-up.jpg" alt="" class="img-box">
+        <div class="above-text">
+            <h1>Shoe of the <br> Best Quality</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, <br>
+                luctus nec ullamcorper mattis, pulvinar dapibus leo .</p>
+            <button class="button-shop-collection">Shop Collection</button>
+        </div>
+    </div>
+    <h1 class="Heading">Best Offer shoes</h1>
+    <div class="bst-shoes">
+        <div class="item">
+            <img src="Pics/wmns air jordan.webp" alt="">
+            <p>JORDAN</p>
+            <h1>
+                Wmns Air Jordan 2 Retro 'Sunset Haze'<br>
+                ₱7,996.00
+            </h1>
+        </div>
+        <div class="item">
+            <img src="Pics/Puma M.B.webp" alt="">
+            <p>
+                PUMA
+            </p>
+            <h1>
+                Puma MB.02 'Flare'<br>
+                ₱7,650.00
+            </h1>
+        </div>
+        <div class="item">
+            <img src="Pics/Air jordan 2 retro.webp" alt="">
+            <p>
+                JORDAN
+            </p>
+            <h1>
+                Air Jordan 2 Retro Low 'Melon Tint'<br>
+                ₱8,895.00
+            </h1>
+        </div>
+        <div class="item">
+            <img src="Pics/nike airforce billie.webp" alt="">
+            <p>
+                NIKE SPORTSWEAR
+            </p>
+            <h1>
+                Nike Air Force 1 SP x Billie Eilish 'Triple White'<br>
+                ₱7,395.00
+            </h1>
+        </div>
+        <div class="item">
+            <img src="Pics/air-jordan 2.webp" alt="" class="imgs2">
+            <p>JORDAN</p>
+            <h1>
+                Air Jordan 2 Retro Low SP 'TITAN'<br>
+                ₱8,326.50
+            </h1>
+        </div>
+        <div class="item">
+            <img src="Pics/nike lebron20 low.webp" alt="" class="imgs2">
+            <p>
+                NIKE
+            </p>
+            <h1>
+                Nike LeBron 19 Low x TITAN 'Beyond the Seas'<br>
+                ₱6,926.50
+            </h1>
+        </div>
+        <div class="item">
+            <img src="Pics/Nike Blazer Mid '77 Vintage 'White and Black.webp" alt="" class="imgs2">
+            <p>
+                NIKE SPORTSWEAR
+            </p>
+            <h1>
+                Nike Blazer Mid '77 Vintage 'White and Black''<br>
+                ₱3,996.00
+            </h1>
+        </div>
+        <div class="item">
+            <img src="Pics/Air Jordan 2 Retro GS 'Chicago.webp" alt="" class="imgs2">
+            <p>
+                JORDAN
+            </p>
+            <h1>
+                Air Jordan 2 Retro GS 'Chicago'<br>
+                ₱5,196.00
+            </h1>
+        </div>
+    </div>
+    <div class="ideal-shop">
+        <div class="follow">
+            <img src="Pics/follow.jpg" alt="">
+            <h3>The base collection - Ideal <br>
+                every day.</h3>
+            <button>Shop Now</button>
+        </div>
+
+        <img src="Pics/VERSACE X GQ X 李斯丹妮.png" alt="" class="test3">
+    </div>
+    <?php if (isset($_GET['from_signup']) && $_GET['from_signup'] === 'true') {
+        echo '<script type="text/javascript">toastr.success("Welcome New User!")</script>';
+    } ?>
+
+</body>
+
+</html>

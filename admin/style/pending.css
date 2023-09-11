@@ -1,0 +1,127 @@
+.purchase-container {
+    padding: 50px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.a-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.overflow-container {
+    overflow-y: auto;
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+.test {
+    text-align: center;
+    
+}
+
+.shoes-container {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    flex-direction: column;
+    width: 250px;
+}
+
+.pic-container {
+    height: auto;
+    width: auto;
+    margin-top: auto;
+}
+
+.pic-container img {
+    width: 150px;
+}
+
+.text-container {
+    margin-left: 10px;
+}
+
+.text-container h5:nth-of-type(2) {
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.text-container h3 {
+    margin-top: 15px;
+}
+
+.text-container h4 {
+    margin-top: 10px;
+}
+
+
+.form {
+
+}
+
+.inputs {
+    margin-top: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+.inputss {
+    margin-top: 5px;
+    border: none;
+    background: none;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+
+.input-container {
+    margin-bottom: 40px;
+}
+
+.addborder {
+    padding: 10px;
+    border: 1px solid black;
+    width: 270px;
+}
+
+.pagination {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+@media only screen and (max-width: 605px) {
+    
+
+   
+
+    .purchase-container {
+        width: 65vh;
+    }
+  
+ }

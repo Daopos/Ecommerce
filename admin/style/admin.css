@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.add {
+    width: 10%;
+    padding: 0; 
+}
+
+.add img {
+    width: 80%; /* Set image width to 100% to fit within the button */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+
+
+.file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  
+  }
+
+  .file-input__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 12px;
+    background-color: #4245a8;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    display: block;
+  }
+  
+  .file-input__label svg {
+    height: 16px;
+    margin-right: 4px;
+  }
+
+  .addform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0 50px 0;
+  }
+
+  .addform input {
+    height: 43px;
+    width: 400px;
+    text-indent: 10px;
+  }
+  .addform input:nth-last-child(2) {
+    resize: none;
+
+  }
+
+
+
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.label-upload {
+  text-align: center;
+  display:block;
+  margin: 5px;
+}  
+
+/* .addform input:last-of-type {
+  background-color:#4245a8;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 50px;
+} */
+
+.two-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.two-btn input:last-child{
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.two-btn input{
+  background-color: #0275d8;
+  width: 200px;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  
+}
+

@@ -1,0 +1,42 @@
+
+
+
+.signup-photo {
+    background-image: url('../photos/singup-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50%;
+    min-height: 730px;
+}
+
+.container-signup {
+    display: flex;
+    height: 93vh;
+}
+
+.login-google {
+    margin: 10px;
+}
+
+.signup-test h3 {
+    font-weight: 200; 
+    font-size: medium;
+}
+
+.anccount {
+    font-size: 35px;
+    margin-top: 20px;
+
+}
+
+@media only screen and (max-width: 933px) {
+    
+    .signup-photo {
+    display: none;
+    } 
+    .anccount {
+        text-align: center;
+    }
+ 
+ }

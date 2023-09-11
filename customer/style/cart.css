@@ -1,0 +1,125 @@
+
+form {
+    width: fit-content;
+}
+
+.shopping-cart-container {
+    padding: 50px;
+
+}
+
+.shopping-cart-container h1 {
+    margin-bottom: 20px;
+}
+
+.smallx {
+    font-weight: 400;
+}
+
+.cart-shoes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.shoes-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+}
+
+.pic-container {
+    height: auto;
+    width: auto;
+    margin-top: auto;
+}
+
+.pic-container img {
+    width: 150px;
+}
+
+.text-container {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container h5:nth-of-type(1) {
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.text-container h3 {
+    margin-top: 15px;
+    width: 500px;
+}
+
+.text-container h4 {
+    margin-top: 10px;
+}
+
+
+
+.x-button {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout {
+    margin-left: auto;
+    margin-top: 5px;
+    width: 80px;
+}
+
+.fix-input {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 582px) {
+    
+    .shopping-cart-container {
+        padding: 50px 20px;
+    
+    }
+
+ 
+    .shoes-container {
+ 
+        width: 400px;
+    }
+
+    /* .x-button {
+        margin-left: 200px;
+    }
+    
+    .checkout {
+        margin-left: 252px;
+    } */
+    
+    
+ }
+
+ @media only screen and (max-width: 790px) {
+    
+    .text-container h3 {
+        width: 200px;
+    }
+    
+ }

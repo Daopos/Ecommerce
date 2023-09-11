@@ -1,0 +1,307 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.shoes-of-quality {
+    background-image: url("../photos/womenlegs.jpg");
+    height: 70vh;
+    background-size: cover;
+    padding: 100px 0 0 150px;
+    background-position: center;
+
+}
+
+
+.shoes-of-quality div h1 {
+    font-size: 70px;
+    color: white;
+}
+
+.para {
+    margin-top: 20px;
+    width: 500px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.para h4{
+    font-weight: 100;
+}
+
+.shopcollect {
+    margin-top: 20px;
+
+}
+
+.shopcollect a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .slides-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+
+  .best-offer {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .best-offer h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .twopic {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+
+  .boysit {
+    width: 60%;
+  }
+
+  .girlsit {
+    width: 60%;
+  }
+
+  .boycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boycontainer a {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+
+  .girlcontainer {
+
+  }
+
+  .collection {
+    background-image: url("../photos/collection.jpg");
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+  }
+
+  .collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+    margin-bottom: 150px;
+  }
+
+  .collection a {
+    text-decoration: none;
+    background-color: #CB6565;
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
+  }
+
+  .collection div h2 {
+    text-align: center;
+  }
+
+  .explore div img {
+    height: 70%;
+    width: 40%;
+  }
+
+.explore {
+    display: flex;
+    margin-bottom: 120px;
+  }
+
+  .exploreone {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 500px;
+  }
+.exploreone img:last-of-type {
+    align-self: flex-end;
+}
+
+  .exploretwo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .exploretwo div a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 13px;
+  }
+
+  .threepic {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 150px;
+  }
+
+  .threepic img {
+    width: 20%;
+    height: 300px;
+  }
+
+  .footer {
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: white;
+    height: 300px;
+    align-items: center;
+  }
+
+  .midfoot {
+    width: 600px;
+  }
+
+  .footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 200px;
+   
+  }
+
+  .footer h2,h3,h4,h1 {
+    font-weight: 400;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+  @media only screen and (max-width: 1070px) {
+    .midfoot {
+        width: 200px;
+      }
+  }
+
+  @media only screen and (max-width: 880px) {
+    
+    .footer{
+        gap: 40px;
+    }
+    
+    
+    .exploreone {
+        height: 400px;
+    }
+
+    .para h4 {
+        width: 300px;
+    }
+    .para  {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .shoes-of-quality {
+      padding: 100px 0 0 70px;
+    }
+ }
+
+ @media only screen and (max-width: 690px) {
+    
+    .exploretwo h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .threepic img {
+        width: 20%;
+        height: 170px;
+      }
+    
+    .exploreone {
+        visibility:hidden;
+        width: 0px;
+    }
+    .explore {
+        justify-content: center;
+    }
+    .shoes-of-quality div h1 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .boycontainer h2 {
+        font-size: 13px;
+    }
+    .collection {
+        gap: 10px;
+    }
+
+    .footer h2,h3,h4,h1 {
+        font-size: 14px;
+      }
+
+      .midfoot {
+        width: 200px;
+      }
+ }

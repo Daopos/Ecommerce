@@ -1,0 +1,149 @@
+input[type="checkbox"] {
+    width:20px;
+    height:20px;
+    margin: 0 7px;
+}
+
+
+
+.container {
+    display: flex;
+    height: 91vh;
+
+}
+
+ 
+
+.shoes-photo {
+    background-image: url('../photos/login-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50%;
+    min-height: 730px;
+} 
+
+
+.login-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-title h1,h3{
+   text-align: center;
+
+}
+
+.login-title h1 {
+    padding-top: 20px;
+}
+
+.login-title h3{
+    text-align: center;
+    margin-top: 70px;
+    font-weight: 500;
+ }
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.login-input{
+    margin: 15px 0;
+    height: 43px;
+    width: 400px;
+    text-indent: 10px;
+}
+
+.login-forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-forgot h4 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.signupfree {
+    text-decoration: none;
+        color: #51A1CE;
+}
+        
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-btn button {
+    height: 40px;
+    width: auto;
+    margin: 30px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+}
+
+h6 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    font-size: large;
+ } 
+ 
+ h6 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+.login-or {
+    padding: 0 40px;
+}
+
+ .login-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+ }
+
+ .login-google h3 {
+    margin-left: 15px;
+    font-weight: 600;
+ }
+
+ .donthave h3, a{
+    font-weight: 200; 
+    font-size: medium;
+}
+
+
+ .fix-align {
+    display: flex;
+    align-items: center;
+ }
+
+ .login-title h1 {
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+
+ }
+
+ .error {
+    border: 2px solid #D21312;
+}
+
+.error:focus {
+    outline-color: #D21312;
+  }

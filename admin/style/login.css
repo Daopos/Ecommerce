@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+body {
+    background: url(shoe-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+    margin-top: 50px;
+}
+
+.login-container {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: inset;
+    box-shadow: 0 0 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+form input {
+    width: 300px;
+    height: 40px;
+}
+
+.fix {
+    padding-left: 10px;
+}
+
+.login {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  
+}
+
+form input:last-of-type {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .login-container {
+        width: 400px;
+        height: 500px;
+        
+    }
+ }
